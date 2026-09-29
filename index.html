@@ -6,11 +6,11 @@
 <title>Подключение AzauVPN</title>
 </head>
 <body style="font-family: sans-serif; text-align: center; padding: 40px 16px;">
-<p>Открываем Happ…</p>
+<p>Открываем приложение…</p>
 <p><a id="go" href="#">Если ничего не произошло — нажмите здесь</a></p>
 <script>
   var link = decodeURIComponent(location.hash.slice(1));
-  if (link.indexOf("happ://") === 0) {
+  if (link.indexOf("happ://") === 0 || link.indexOf("incy://") === 0) {
     document.getElementById("go").href = link;
     location.replace(link);
   }
